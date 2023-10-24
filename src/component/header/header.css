@@ -1,0 +1,24 @@
+.header{
+    background-color: #003580;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer{
+    width: 100%;
+    background-color: red;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerlist{
+    display: flex;
+    gap: 40px;
+}
+
+.headerListiItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
