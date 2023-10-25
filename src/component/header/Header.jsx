@@ -41,10 +41,23 @@ const Header = () => {
           with a free booking Account
         </p>
         <button className="headerBtn">Sign in / Register</button>
+        <div className="headersearch">
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faBed} className="headerIcon" />
+            <input type="text" placeholder="Where are you going?" className="headerSearchInput" />
+          </div>
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
+            <input type="text" placeholder="Where are you going?" className="headerSearchInput" />
+            <span className="headerSearchdate">date to date</span>
+          </div>
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faBed} className="headerIcon" />
+            <input type="text" placeholder="Where are you going?" className="headerSearchInput" />
+          </div>
+        </div>
       </div>
     </div>
-
-    
   );
 };
 
