@@ -3,7 +3,9 @@ import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
+  faCalendarDays,
   faCar,
+  faPerson,
   faPlane,
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
@@ -48,12 +50,13 @@ const Header = () => {
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
-            <input type="text" placeholder="Where are you going?" className="headerSearchInput" />
+
             <span className="headerSearchdate">date to date</span>
           </div>
           <div className="headerSearchItem">
-            <FontAwesomeIcon icon={faBed} className="headerIcon" />
-            <input type="text" placeholder="Where are you going?" className="headerSearchInput" />
+            <FontAwesomeIcon icon={faPerson} className="headerIcon" />
+           
+            <span className="headerSearchdate">2 adult 2 children 1 room</span>
           </div>
         </div>
       </div>
