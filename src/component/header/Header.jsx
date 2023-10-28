@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
+import { DateRange } from "react-date-range";
+import "react-date-range/dist/styles.css"; // main css file
+import "react-date-range/dist/theme/default.css"; // theme css file
+import { format } from "date-fns";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBed,
@@ -12,6 +16,15 @@ import {
 
 import "./header.css";
 const Header = () => {
+  const [opendate, setopendate] = useState(false);
+  const [date, setdate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
+  ]);
+
   return (
     <div className="header">
       <div className="headerContainer">
@@ -46,17 +59,41 @@ const Header = () => {
         <div className="headersearch">
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faBed} className="headerIcon" />
-            <input type="text" placeholder="Where are you going?" className="headerSearchInput" />
+            <input
+              type="text"
+              placeholder="Where are you going?"
+              className="headerSearchInput"
+            />
           </div>
+
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
 
-            <span className="headerSearchdate">date to date</span>
+            {opendate && (
+              <DateRange
+                editableDateInputs={true}
+                onChange={(item) => setdate([item.selection])}
+                moveRangeOnFirstSelection={false}
+                ranges={date}
+                className="date"
+              />
+            )}
+            <span
+              onClick={() => setopendate(!opendate)}
+              className="headerSearchText"
+            >{`${format(date[0].startDate, "dd/MM/yyyy")} to ${format(
+              date[0].endDate,
+              "dd/MM/yyyy"
+            )}`}</span>
           </div>
+
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faPerson} className="headerIcon" />
-           
-            <span className="headerSearchdate">2 adult 2 children 1 room</span>
+            <span className="headerSearchText">2 adult 2 children 1 room</span>
+          </div>
+
+          <div className="headerSearchItem">
+            <button className="headerBtn">Search</button>
           </div>
         </div>
       </div>
@@ -65,3 +102,4 @@ const Header = () => {
 };
 
 export default Header;
+//28:52
