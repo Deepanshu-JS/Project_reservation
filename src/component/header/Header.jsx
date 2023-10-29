@@ -15,6 +15,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./header.css";
+
+
 const Header = () => {
   //for date
   const [opendate, setopendate] = useState(false);
@@ -33,6 +35,14 @@ const Header = () => {
     children: 1,
     room: 1,
   });
+
+
+  //for increaing no and decreasing no
+  const handleOption=(name,operation)=>{
+      setOptions(prev=>{return{
+        ...prev,[name]: operation ==="i"? Options[name]-1:Options[name]+1
+      }})
+  }
   return (
     <div className="header">
       <div className="headerContainer">
@@ -101,21 +111,27 @@ const Header = () => {
             <div className="option">
               <div className="optionItem">
                 <span className="optionText">Adult</span>
-                <button className="optionCounterButton">+</button>
-                <span className="optionTextNumber">1</span>
-                <button className="optionCounterButton">-</button>
+                <div className="optionCount">
+                <button className="optionCounterButton"  onClick={()=>handleOption("adult","i")}>-</button>
+                <span className="optionTextNumber">{Options.adult}</span>
+                <button className="optionCounterButton" onClick={()=>handleOption("adult","d")}>+</button>
+                </div>
               </div>
               <div className="optionItem">
                 <span className="optionText">Children</span>
-                <button className="optionCounterButton">+</button>
-                <span className="optionTextNumber">1</span>
-                <button className="optionCounterButton">-</button>
+                <div className="optionCount">
+                <button className="optionCounterButton" onClick={()=>handleOption("children","i")}>-</button>
+                <span className="optionTextNumber">{Options.children}</span>
+                <button className="optionCounterButton" onClick={()=>handleOption("children","d")}>+</button>
+                </div>
               </div>
               <div className="optionItem">
                 <span className="optionText">Room</span>
-                <button className="optionCounterButton">+</button>
-                <span className="optionTextNumber">1</span>
-                <button className="optionCounterButton">-</button>
+                <div className="optionCount">
+                <button className="optionCounterButton" onClick={()=>handleOption("room","i")}>-</button>
+                <span className="optionTextNumber">{Options.room}</span>
+                <button className="optionCounterButton" onClick={()=>handleOption("room","d")}>+</button>
+                </div>
               </div>
             </div>
           </div>

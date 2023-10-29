@@ -30,21 +30,21 @@
   padding: 10px;
   border-radius: 20px;
 }
-.headerDesc{
-    margin: 20px 0px;
-} 
+.headerDesc {
+  margin: 20px 0px;
+}
 
-.headerBtn{
-   background-color: #0071c2;
-   color: white; 
-   border: none;
-   padding: 10px;
-   cursor: pointer;
+.headerBtn {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
 /* ------------------------------------------------------------- */
 
-.headersearch{
+.headersearch {
   height: 30px;
   background-color: white;
   border: 3px solid #febb02;
@@ -57,30 +57,61 @@
   bottom: -25px;
   width: 100%;
   max-width: 1024px;
+  box-shadow: 1px 20px 87px -39px rgba(255,7,7,1) inset;
+-webkit-box-shadow: 1px 20px 87px -39px rgba(255,7,7,1) inset;
+-moz-box-shadow: 1px 20px 87px -39px rgba(255,7,7,1) inset;
 }
 
-
-.headerIcon{
+.headerIcon {
   color: lightgray;
-
 }
-.headersearchItem{
+.headersearchItem {
   display: flex;
   align-items: center;
   gap: 10px;
+  
 }
 
-.headersearchInput{
+.headersearchInput {
   border: none;
   outline: none;
 }
 
-.headerSearchText{
+.headerSearchText {
   color: rgb(152, 151, 151);
   cursor: pointer;
 }
-.date{
+.date {
   position: absolute;
   top: 54px;
-  
+  box-shadow: 1px 20px 87px -39px rgba(255,7,7,1) inset;
+-webkit-box-shadow: 1px 20px 87px -39px rgba(255,7,7,1) inset;
+-moz-box-shadow: 1px 20px 87px -39px rgba(255,7,7,1) inset;
+}
+
+.option {
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: grey;
+  border-radius: 5px;
+  box-shadow: 1px 20px 87px -39px rgba(255,7,7,1) inset;
+-webkit-box-shadow: 1px 20px 87px -39px rgba(255,7,7,1) inset;
+-moz-box-shadow: 1px 20px 87px -39px rgba(255,7,7,1) inset;
+}
+
+
+.optionItem{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+
+}
+
+.optionCount{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size:12px ;
 }
