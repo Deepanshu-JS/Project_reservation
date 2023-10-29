@@ -107,8 +107,8 @@ const Header = () => {
 
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faPerson} className="headerIcon" />
-            <span className="headerSearchText">{`${Options.adult}adult ${Options.children}.children ${Options.room}.room`}</span>
-            <div className="option">
+            < span onClick={() => setopenOption(!openOption)} className="headerSearchText">{`${Options.adult}adult ${Options.children}.children ${Options.room}.room`}</span>
+            {openOption && <div className="option">
               <div className="optionItem">
                 <span className="optionText">Adult</span>
                 <div className="optionCount">
@@ -133,7 +133,7 @@ const Header = () => {
                 <button className="optionCounterButton" onClick={()=>handleOption("room","d")}>+</button>
                 </div>
               </div>
-            </div>
+            </div>}
           </div>
 
           <div className="headerSearchItem">
