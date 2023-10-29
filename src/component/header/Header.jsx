@@ -16,6 +16,7 @@ import {
 
 import "./header.css";
 const Header = () => {
+  //for date
   const [opendate, setopendate] = useState(false);
   const [date, setdate] = useState([
     {
@@ -25,6 +26,13 @@ const Header = () => {
     },
   ]);
 
+  //for seat
+  const [openOption, setopenOption] = useState(false);
+  const [Options, setOptions] = useState({
+    adult: 1,
+    children: 1,
+    room: 1,
+  });
   return (
     <div className="header">
       <div className="headerContainer">
@@ -89,7 +97,27 @@ const Header = () => {
 
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faPerson} className="headerIcon" />
-            <span className="headerSearchText">2 adult 2 children 1 room</span>
+            <span className="headerSearchText">{`${Options.adult}adult ${Options.children}.children ${Options.room}.room`}</span>
+            <div className="option">
+              <div className="optionItem">
+                <span className="optionText">Adult</span>
+                <button className="optionCounterButton">+</button>
+                <span className="optionTextNumber">1</span>
+                <button className="optionCounterButton">-</button>
+              </div>
+              <div className="optionItem">
+                <span className="optionText">Children</span>
+                <button className="optionCounterButton">+</button>
+                <span className="optionTextNumber">1</span>
+                <button className="optionCounterButton">-</button>
+              </div>
+              <div className="optionItem">
+                <span className="optionText">Room</span>
+                <button className="optionCounterButton">+</button>
+                <span className="optionTextNumber">1</span>
+                <button className="optionCounterButton">-</button>
+              </div>
+            </div>
           </div>
 
           <div className="headerSearchItem">
