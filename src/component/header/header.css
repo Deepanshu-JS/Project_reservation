@@ -46,7 +46,7 @@
 
 .headersearch {
   height: 30px;
-  background-color: white;
+  background-color: rgb(141, 139, 139);
   border: 3px solid #febb02;
   display: flex;
   align-items: center;
@@ -63,22 +63,23 @@
 }
 
 .headerIcon {
-  color: lightgray;
+  color: rgb(44, 43, 43);
 }
-.headersearchItem {
+.headerSearchItem {
   display: flex;
   align-items: center;
   gap: 10px;
   
 }
 
-.headersearchInput {
+.headerSearchInput {
   border: none;
   outline: none;
+  
 }
 
 .headerSearchText {
-  color: rgb(152, 151, 151);
+  color: rgb(43, 42, 42);
   cursor: pointer;
 }
 .date {
