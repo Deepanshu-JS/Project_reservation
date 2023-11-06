@@ -10,7 +10,7 @@ const Featured = () => {
             <h1>Dublin</h1>
             <h2>123 Properties</h2>
           </div>
-        </div>
+        </div> 
     </div>
   )
 }
