@@ -3,18 +3,18 @@
 ### This is a Reservation APP /
 ### IN THIS React Project, The pattern I Learn That is:
 
-### `How To`:
+### `How To use`:
 
-### USE `Folder structuring`
+ `Folder structuring`
 
-### USE `Use State`
+ `Use State`
 
-### USE `Routing`
+ `Routing`
 
-### USE `Date Generator`
+ `Date Generator`
 
-### USE `Date Formatting`
+ `Date Formatting`
 
-### USE `Activate card using flag when click` 
+ `Activate card using flag when click` 
 
 
