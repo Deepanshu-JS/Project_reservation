@@ -6,11 +6,11 @@ import Featured from "../../component/Featured/Featured";
 const Home = () => {
   return (
     <div>
-      <Navbar/>
-      <Header/>
+      <Navbar />
+      <Header />
       <div className="homeContainer">
-        <Featured/>
-        <Featured/>
+        <Featured />
+        <h1 className="homeTitle">Browser by property type</h1>
       </div>
     </div>
   );

@@ -84,6 +84,7 @@
   position: absolute;
   top: 54px;
   border-radius: 5px;
+  z-index: 2;
  
 }
 
@@ -94,6 +95,7 @@
   background-color: white;
   color: rgb(219, 214, 214);
   border-radius: 5px;
+  z-index: 2;
 }
 
 .optionItem {
