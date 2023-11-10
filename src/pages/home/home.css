@@ -10,3 +10,6 @@
     width: 1024;
     font-size: 20px;
 }
+.main{
+    overflow: hidden;
+}
