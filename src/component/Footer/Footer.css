@@ -1,24 +1,24 @@
-.footer{
-    width: 100%;
-    max-width: 1024px;
-    font-size: 12px;
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  font-size: 12px;
+  margin: 0 auto; /* Center the footer content */
+  gap: 20px;
 }
 
-.fLists{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    
-    
+.fLists {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
-.flist{
-    list-style: none;
+.flist {
+  list-style: none;
 }
 
-.flistItem{
-    margin-bottom: 10px;
-    color: #003580;
-    cursor: pointer;
+.flistItem {
+  margin-bottom: 10px;
+  color: #003580;
+  cursor: pointer;
+  /* Add any additional styling you need for each list item */
 }
