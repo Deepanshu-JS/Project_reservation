@@ -25,3 +25,51 @@
 .listResult {
   flex: 3;
 }
+.lsItem>input{
+  height: 30px;
+  border: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.datess{
+  font-weight: bold;
+  border-radius: 10px;
+}
+.lsItem>span{
+  height: 30px;
+  padding: 5px;
+  background-color:white ;
+  cursor: pointer;
+  
+}
+
+.lsItem{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.lsItem>label{font-size: 15px;}
+
+
+.lsOptionItem{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+  
+}
+.lsOptionInput{
+  border-radius: 5px;
+  width: 50px;
+  
+}
+.lsoption{
+  padding: 10px;
+}
+
+
+.listResult{
+  flex: 3;
+}

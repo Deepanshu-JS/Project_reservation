@@ -17,4 +17,5 @@
 
  `Activate card using flag when click` 
 
+ `usenavigate can redirect you to the page you want`
 
