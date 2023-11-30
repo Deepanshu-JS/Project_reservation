@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../component/navbar/Navbar";
 import Header from "../../component/header/Header";
+import SearchItem from "../../component/searchItem/searchitem.jsx";
 import "./list.css";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
@@ -50,55 +51,58 @@ const List = () => {
             {/* Option (yellow Box left side) */}
             <div className="lsItem">
               <label>Options</label>
+
+              {/* div for all option */}
               <div className="lsoption">
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">
+                    Min Price <small>per night</small>
+                  </span>
 
-              <div className="lsOptionItem">
-                <span className="lsOptionText">
-                  Min Price <small>per night</small>
-                </span>
+                  <input type="number" className="lsOptionInput"></input>
+                </div>
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">
+                    Max Price <small>per night</small>
+                  </span>
 
-                <input type="number" className="lsOptionInput"></input>
-              </div>
-              <div className="lsOptionItem">
-                <span className="lsOptionText">
-                  Max Price <small>per night</small>
-                </span>
+                  <input type="number" className="lsOptionInput"></input>
+                </div>
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">Adult</span>
 
-                <input type="number" className="lsOptionInput"></input>
-              </div>
-              <div className="lsOptionItem">
-                <span className="lsOptionText">Adult</span>
-
-                <input
-                  type="number"
-                  min={1}
-                  className="lsOptionInput"
-                  placeholder={Options.adult}
-                ></input>
-              </div>
-              <div className="lsOptionItem">
-                <span className="lsOptionText">Children</span>
-
-                <input
-                  type="number"
-                  min={0}
-                  className="lsOptionInput"
-                  placeholder={Options.children}
-                ></input>
-              </div>
-              <div className="lsOptionItem">
-                <span className="lsOptionText">Room</span>
-                <input
-                  type="number"
-                  min={1}
-                  className="lsOptionInput"
-                  placeholder={Options.room}
+                  <input
+                    type="number"
+                    min={1}
+                    className="lsOptionInput"
+                    placeholder={Options.adult}
                   ></input>
+                </div>
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">Children</span>
+
+                  <input
+                    type="number"
+                    min={0}
+                    className="lsOptionInput"
+                    placeholder={Options.children}
+                  ></input>
+                </div>
+                <div className="lsOptionItem">
+                  <span className="lsOptionText">Room</span>
+                  <input
+                    type="number"
+                    min={1}
+                    className="lsOptionInput"
+                    placeholder={Options.room}
+                  ></input>
+                </div>
               </div>
-                  </div>
             </div>
           </div>
-          <div className="listResult"></div>
+          <div className="listResult">
+            <SearchItem/>
+          </div>
         </div>
       </div>
     </div>
