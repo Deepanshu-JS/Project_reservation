@@ -16,6 +16,7 @@ const List = () => {
   const [Options, setOptions] = useState(location.state.Options);
 
   return (
+    
     <div>
       <Navbar />
 
