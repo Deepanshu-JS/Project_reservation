@@ -101,7 +101,7 @@ const List = () => {
             </div>
           </div>
           <div className="listResult">
-            <SearchItem/>
+            <SearchItem />
           </div>
         </div>
       </div>
