@@ -2,13 +2,13 @@ React Project - Project  Reservation
 
 
 Table of Contents:
-Description
-Folder Structuring
-Usage of State
-Routing
-Date Generation and Formatting
-Card Activation
-Navigation
+Description  
+Folder Structuring  
+Usage of State  
+Routing  
+Date Generation and Formatting  
+Card Activation  
+Navigation  
 
 
 Description
